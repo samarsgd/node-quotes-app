@@ -1,0 +1,103 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the inner box */
+.inner {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the quote text */
+.quotes {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Style the author text */
+.author {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Style the new quotes button */
+#newQ {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#newQ:hover {
+    background-color: #0056b3;
+}
+
+/* Style the tweet button */
+#tweetMe {
+    cursor: pointer;
+    font-size: 20px;
+    color: #007bff;
+    transition: transform 0.3s ease;
+}
+
+#tweetMe:hover {
+    transform: scale(1.1);
+}
+
+/* Animate the quote text */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.quotes {
+    animation: fadeIn 1s ease;
+}
+
+/* Animate the new quotes button */
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#newQ {
+    animation: slideIn 0.5s ease;
+}
+.tweetMe {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
